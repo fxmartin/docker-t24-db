@@ -149,7 +149,7 @@ case "$1" in
 				echo "Not yet implemented"
 				exit 0;;
 			*)
-				displayhelp-build
+				displayhelp
 				exit 1;;
 		esac
 		exit 0;;
@@ -173,7 +173,7 @@ case "$1" in
 				echo "Not yet implemented"
 				exit 0;;
 			*)
-				displayhelp-build
+				displayhelp
 				exit 1;;
 		esac
 		exit 0;;

@@ -30,6 +30,8 @@ or
 t24.sh start db
 ```
 
+*__Note__: what 5 to 10 seconds after start before connecting otherwise you'll get an error <<Exception in thread "main" org.h2.jdbc.JdbcSQLException: Connection is broken: "java.net.ConnectException: Connection refused:>>*
+
 **Connect via h2 shell:**
 ```
 java -cp tools/h2/bin/h2-1.3.176.jar org.h2.tools.Shell -url "jdbc:h2:tcp://$IP:1521/R15MB;DB_CLOSE_ON_EXIT=FALSE;MODE=Oracle;TRACE_LEVEL_FILE=0;TRACE_LEVEL_SYSTEM_OUT=0;FILE_LOCK=NO;IFEXISTS=TRUE;CACHE_SIZE=8192" -user t24 -password t24
@@ -41,11 +43,11 @@ t24.sh h2 shell
 
 Image 1 - h2 console
 
-![h2 console](https://raw.github.com/fxmartin/docker-t24-db/master/screenshots/h2-console.jpg)
+![h2 console](https://raw.github.com/fxmartin/docker-t24-db/master/screenshots/h2-console.png)
 
 Image 1 - h2 shell
 
-![h2 shell](https://raw.github.com/fxmartin/docker-t24-db/master/screenshots/h2-shell.jpg)
+![h2 shell](https://raw.github.com/fxmartin/docker-t24-db/master/screenshots/h2-shell.png)
 
 ## Disclaimer
 *The information in this page is provided “AS IS” with no warranties, and confers no rights.*

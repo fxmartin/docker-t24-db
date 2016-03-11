@@ -8,7 +8,7 @@ You'll have to collect the install files yourself to test this. it should be ava
 ## About
 The beauty of Docker is that as soon as you can get hold of a proper image you can very quickly deploy a working container.
 
-Here we're using the image [fxmartin/docker-h2-server](https://hub.docker.com/r/fxmartin/docker-h2-server/ but running it with a host directory mounted as data volume where the T24 *.h2.db file is stored. It is that simple!
+Here we're using the image [fxmartin/docker-h2-server](https://hub.docker.com/r/fxmartin/docker-h2-server) but running it with a host directory mounted as data volume where the T24 *.h2.db file is stored. It is that simple!
 
 For convenience there is a *./t24.sh* command for starting (with proper port mappings), stopping, connecting via ssh and launching the h2 console or shell.
 

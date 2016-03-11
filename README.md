@@ -48,11 +48,11 @@ Image 1 - h2 shell
 ![h2 shell](https://raw.github.com/fxmartin/docker-t24-db/master/screenshots/h2-shell.jpg)
 
 ## Disclaimer
-*The information in this page is provided “AS IS” with no warranties, and confers no rights.
+*The information in this page is provided “AS IS” with no warranties, and confers no rights.*
 
-This page does not represent the thoughts, intentions, plans or strategies of my employer. It is solely my opinion.
+*This page does not represent the thoughts, intentions, plans or strategies of my employer. It is solely my opinion.*
 
-Feel free to challenge me, disagree with me, or tell me I’m completely nuts, but I reserve the right to delete any comment for any reason whatsoever (abusive, profane, rude, or anonymous comments) – so keep it polite, please.*
+*Feel free to challenge me, disagree with me, or tell me I’m completely nuts, but I reserve the right to delete any comment for any reason whatsoever (abusive, profane, rude, or anonymous comments) – so keep it polite, please.*
 
 ## What is Temenos T24?
 T24 is a core banking system developed and sold by Temenos company. See their [web site](http://www.temenos.com/en/) for more information 

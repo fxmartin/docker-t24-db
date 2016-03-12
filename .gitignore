@@ -1,2 +1,6 @@
-*.h2.db
+*.db
 *.jar
+
+*.db
+
+t24-db/R15MB.lock.db

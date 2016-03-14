@@ -13,7 +13,7 @@ VERSION=1.0.0
 IMAGE_H2="fxmartin/docker-h2-server"
 
 ID_H2=`docker ps | grep "$IMAGE_H2" | head -n1 | cut -d " " -f1`
-IP=`docker-machine ip docker`
+IP=`docker-machine ip default`
 
 is_running() {
 	[ "$ID_H2" ]
@@ -130,6 +130,12 @@ case "$1" in
 				exit 1;;
 		esac
 		exit 0;;
+	web)
+        open -a "Google Chrome" "http://$IP:55580"
+		exit 0;;
+    proc)
+    	open -a "Google Chrome" "http://$IP:55591"
+		exit 0;;
 		
 	start)
 		case "$2" in
@@ -139,7 +145,7 @@ case "$1" in
                 	exit 1;
                 fi
                 echo "Starting Docker image: '$IMAGE_H2'"
-                docker run -d -p 55522:22 -p 55580:80 -p 55581:81 -p 1521:1521 -v $(pwd)/t24-db:/opt/h2-data $IMAGE_H2
+                docker run -d -p 55522:22 -p 55580:80 -p 55581:81 -p 1521:1521 -p 55591:91 -v $(pwd)/t24-db:/opt/h2-data $IMAGE_H2
                 echo "Docker image: '$IMAGE_H2' started"
 				exit 0;;
 			t24)
